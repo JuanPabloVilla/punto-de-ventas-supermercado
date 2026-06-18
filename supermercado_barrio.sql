@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-05-2026 a las 03:44:59
+-- Tiempo de generación: 16-06-2026 a las 15:41:12
 -- Versión del servidor: 8.0.30
 -- Versión de PHP: 8.1.10
 
@@ -30,64 +30,51 @@ SET time_zone = "+00:00";
 CREATE TABLE `clientes` (
   `id_cliente` int NOT NULL,
   `nombre` varchar(50) DEFAULT NULL,
-  `numero_cliente` varchar(20) DEFAULT NULL
+  `numero_cliente` varchar(20) DEFAULT NULL,
+  `cedula` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`id_cliente`, `nombre`, `numero_cliente`) VALUES
-(1, 'Juan David Perez', '3004567891'),
-(2, 'Maria Fernanda Lopez', '3015678923'),
-(3, 'Carlos Andres Diaz', '3026789456'),
-(4, 'Luisa Fernanda Ruiz', '3037891234'),
-(5, 'Andres Felipe Gomez', '3048912345'),
-(6, 'Valeria Martinez', '3059123456'),
-(7, 'Camilo Torres', '3101234567'),
-(8, 'Paola Rojas', '3112345678'),
-(9, 'Jhonatan Silva', '3123456789'),
-(10, 'Natalia Herrera', '3134567890'),
-(11, 'Sergio Castro', '3145678901'),
-(12, 'Laura Mendoza', '3156789012'),
-(13, 'Felipe Vargas', '3167890123'),
-(14, 'Daniela Acosta', '3178901234'),
-(15, 'Sebastian Moreno', '3189012345'),
-(16, 'Carolina Pardo', '3190123456'),
-(17, 'Miguel Leon', '3201234567'),
-(18, 'Andrea Suarez', '3212345678'),
-(19, 'Jorge Jimenez', '3223456789'),
-(20, 'Tatiana Reyes', '3234567890'),
-(21, 'Kevin Ortiz', '3245678901'),
-(22, 'Sara Navarro', '3256789012'),
-(23, 'Oscar Molina', '3267890123'),
-(24, 'Monica Valencia', '3278901234'),
-(25, 'Ricardo Romero', '3009876543'),
-(26, 'Patricia Vega', '3018765432'),
-(27, 'David Cifuentes', '3027654321'),
-(28, 'Angela Parra', '3036543210'),
-(29, 'Cristian Fuentes', '3045432109'),
-(30, 'Karen Guerrero', '3054321098'),
-(31, 'Mauricio Salazar', '3107654321'),
-(32, 'Gabriela Cano', '3118765432'),
-(33, 'Fernando Peña', '3129876543'),
-(34, 'Catalina Arias', '3130987654'),
-(35, 'Ivan Lozano', '3141098765'),
-(36, 'Melissa Cardona', '3152109876'),
-(37, 'Samuel Mejia', '3163210987'),
-(38, 'Viviana Ospina', '3174321098'),
-(39, 'Hector Giraldo', '3185432109'),
-(40, 'Liliana Cabrera', '3196543210'),
-(41, 'Brayan Prieto', '3207654981'),
-(42, 'Yesica Medina', '3218765492'),
-(43, 'Jonathan Bonilla', '3229876503'),
-(44, 'Carolina Delgado', '3231987614'),
-(45, 'Mateo Franco', '3242098725'),
-(46, 'Juliana Quintero', '3253109836'),
-(47, 'Alejandro Rincon', '3264210947'),
-(48, 'Camila Beltran', '3275321058'),
-(49, 'Sofia Nieto', '3286432169'),
-(50, 'Nicolas Gallego', '3297543270');
+INSERT INTO `clientes` (`id_cliente`, `nombre`, `numero_cliente`, `cedula`) VALUES
+(1, 'Juan David Perez', '3004567891', '1001234561'),
+(2, 'Maria Fernanda Lopez', '3015678923', '1001234562'),
+(3, 'Carlos Andres Diaz', '3026789456', '1001234563'),
+(4, 'Luisa Fernanda Ruiz', '3037891234', '1001234564'),
+(5, 'Andres Felipe Gomez', '3048912345', '1001234565'),
+(6, 'Valeria Martinez', '3059123456', '1001234566'),
+(7, 'Camilo Torres', '3101234567', '1001234567'),
+(8, 'Paola Rojas', '3112345678', '1001234568'),
+(9, 'Jhonatan Silva', '3123456789', '1001234569'),
+(10, 'Natalia Herrera', '3134567890', '1001234570'),
+(11, 'Sergio Castro', '3145678901', '1001234571'),
+(12, 'Laura Mendoza', '3156789012', '1001234572'),
+(13, 'Felipe Vargas', '3167890123', '1001234573'),
+(14, 'Daniela Acosta', '3178901234', '1001234574'),
+(15, 'Sebastian Moreno', '3189012345', '1001234575'),
+(16, 'Carolina Pardo', '3190123456', '1001234576'),
+(17, 'Miguel Leon', '3201234567', '1001234577'),
+(18, 'Andrea Suarez', '3212345678', '1001234578'),
+(19, 'Jorge Jimenez', '3223456789', '1001234579'),
+(20, 'Tatiana Reyes', '3234567890', '1001234580'),
+(21, 'Kevin Ortiz', '3245678901', '1001234581'),
+(22, 'Sara Navarro', '3256789012', '1001234582'),
+(23, 'Oscar Molina', '3267890123', '1001234583'),
+(24, 'Monica Valencia', '3278901234', '1001234584'),
+(25, 'Ricardo Romero', '3009876543', '1001234585'),
+(26, 'Patricia Vega', '3018765432', '1001234586'),
+(27, 'David Cifuentes', '3027654321', '1001234587'),
+(28, 'Angela Parra', '3036543210', '1001234588'),
+(29, 'Cristian Fuentes', '3045432109', '1001234589'),
+(30, 'Karen Guerrero', '3054321098', '1001234590'),
+(31, 'Mauricio Salazar', '3107654321', '1001234591'),
+(32, 'Gabriela Cano', '3118765432', '1001234592'),
+(33, 'Fernando Peña', '3129876543', '1001234593'),
+(34, 'Catalina Arias', '3130987654', '1001234594'),
+(35, 'Ivan Lozano', '3141098765', '1001234595'),
+(100, 'Cliente_externo', '123', '123');
 
 -- --------------------------------------------------------
 
@@ -109,53 +96,7 @@ INSERT INTO `empleados` (`id_empleado`, `nombre_empleado`, `correo_empleado`) VA
 (1, 'Carlos Ramirez', 'carram@supermercado.com'),
 (2, 'Laura Gomez', 'laugom@supermercado.com'),
 (3, 'Andres Martinez', 'andmar@supermercado.com'),
-(4, 'Sofia Herrera', 'sofher@supermercado.com'),
-(5, 'Juan Torres', 'juator@supermercado.com'),
-(6, 'Valentina Castro', 'valcas@supermercado.com'),
-(7, 'Miguel Rojas', 'migroj@supermercado.com'),
-(8, 'Daniela Vargas', 'danvar@supermercado.com'),
-(9, 'Felipe Moreno', 'felmor@supermercado.com'),
-(10, 'Camila Ruiz', 'camrui@supermercado.com'),
-(11, 'Sebastian Diaz', 'sebdia@supermercado.com'),
-(12, 'Paula Mendoza', 'paumen@supermercado.com'),
-(13, 'Nicolas Silva', 'nicsil@supermercado.com'),
-(14, 'Mariana Pardo', 'marpar@supermercado.com'),
-(15, 'Alejandro Leon', 'aleleo@supermercado.com'),
-(16, 'Natalia Suarez', 'natsua@supermercado.com'),
-(17, 'David Jimenez', 'davjim@supermercado.com'),
-(18, 'Juliana Reyes', 'julrey@supermercado.com'),
-(19, 'Kevin Ortiz', 'kevort@supermercado.com'),
-(20, 'Sara Navarro', 'sarnav@supermercado.com'),
-(21, 'Esteban Acosta', 'estaco@supermercado.com'),
-(22, 'Luisa Molina', 'luimol@supermercado.com'),
-(23, 'Jorge Valencia', 'jorval@supermercado.com'),
-(24, 'Tatiana Romero', 'tatrom@supermercado.com'),
-(25, 'Cristian Vega', 'criveg@supermercado.com'),
-(26, 'Karen Cifuentes', 'karcif@supermercado.com'),
-(27, 'Diego Parra', 'diepar@supermercado.com'),
-(28, 'Angela Fuentes', 'angfue@supermercado.com'),
-(29, 'Oscar Guerrero', 'oscgue@supermercado.com'),
-(30, 'Monica Salazar', 'monsal@supermercado.com'),
-(31, 'Ricardo Cano', 'riccan@supermercado.com'),
-(32, 'Andrea Peña', 'andpen@supermercado.com'),
-(33, 'Santiago Arias', 'sanaar@supermercado.com'),
-(34, 'Patricia Lozano', 'patloz@supermercado.com'),
-(35, 'Mauricio Cardona', 'maucar@supermercado.com'),
-(36, 'Gabriela Mejia', 'gabmej@supermercado.com'),
-(37, 'Fernando Ospina', 'ferosp@supermercado.com'),
-(38, 'Catalina Giraldo', 'catgir@supermercado.com'),
-(39, 'Ivan Cabrera', 'ivacab@supermercado.com'),
-(40, 'Melissa Prieto', 'melpri@supermercado.com'),
-(41, 'Samuel Medina', 'sammed@supermercado.com'),
-(42, 'Viviana Bonilla', 'vivbon@supermercado.com'),
-(43, 'Hector Delgado', 'hecdel@supermercado.com'),
-(44, 'Daniel Perez', 'danper@supermercado.com'),
-(45, 'Liliana Franco', 'lifran@supermercado.com'),
-(46, 'Brayan Quintero', 'braqui@supermercado.com'),
-(47, 'Yesica Rincon', 'yesrin@supermercado.com'),
-(48, 'Jonathan Beltran', 'jonbel@supermercado.com'),
-(49, 'Carolina Nieto', 'carnie@supermercado.com'),
-(50, 'Mateo Gallego', 'matgal@supermercado.com');
+(4, 'Sofia Herrera', 'sofher@supermercado.com');
 
 -- --------------------------------------------------------
 
@@ -179,7 +120,7 @@ INSERT INTO `inventario` (`id_inventario`, `id_producto`, `cantidad_stock`) VALU
 (3, 3, 90),
 (4, 4, 60),
 (5, 5, 40),
-(6, 6, 100),
+(6, 6, 97),
 (7, 7, 40),
 (8, 8, 80),
 (9, 9, 95),
@@ -192,7 +133,7 @@ INSERT INTO `inventario` (`id_inventario`, `id_producto`, `cantidad_stock`) VALU
 (16, 16, 35),
 (17, 17, 85),
 (18, 18, 48),
-(19, 19, 42),
+(19, 19, 36),
 (20, 20, 78),
 (21, 21, 67),
 (22, 22, 52),
@@ -223,7 +164,17 @@ INSERT INTO `inventario` (`id_inventario`, `id_producto`, `cantidad_stock`) VALU
 (47, 47, 120),
 (48, 48, 170),
 (49, 49, 31),
-(50, 50, 145);
+(50, 50, 145),
+(51, 51, 120),
+(52, 52, 100),
+(53, 53, 90),
+(54, 54, 80),
+(55, 55, 70),
+(56, 56, 60),
+(57, 57, 50),
+(58, 58, 40),
+(59, 59, 30),
+(60, 60, 20);
 
 -- --------------------------------------------------------
 
@@ -291,7 +242,17 @@ INSERT INTO `productos` (`id_producto`, `nombre_producto`, `precio`) VALUES
 (47, 'Energizante Vive100', 3200.00),
 (48, 'Chocoramo', 2800.00),
 (49, 'Helado Crem Helado', 6500.00),
-(50, 'Gomitas Trululu', 2500.00);
+(50, 'Gomitas Trululu', 2500.00),
+(51, 'Arroz Integral', 4500.00),
+(52, 'Pasta Espagueti', 3200.00),
+(53, 'Leche Deslactosada', 5500.00),
+(54, 'Atun Enlatado', 6800.00),
+(55, 'Aceite Vegetal', 12000.00),
+(56, 'Detergente Liquido', 14500.00),
+(57, 'Jabon Antibacterial', 3800.00),
+(58, 'Limpiador Multiusos', 8900.00),
+(59, 'Suavizante Ropa', 13500.00),
+(60, 'Desinfectante Piso', 7600.00);
 
 -- --------------------------------------------------------
 
@@ -313,56 +274,82 @@ CREATE TABLE `ventas` (
 --
 
 INSERT INTO `ventas` (`id_venta`, `id_producto`, `id_cliente`, `id_empleado`, `fecha_venta`, `cantidad`) VALUES
-(1, 1, 5, 3, '2026-04-20', 0),
-(2, 2, 10, 7, '2026-05-01', 1),
-(3, 3, 15, 12, '2026-05-02', 4),
-(4, 4, 20, 5, '2026-05-02', 2),
-(5, 5, 25, 9, '2026-04-20', 0),
-(6, 6, 30, 14, '2026-05-03', 2),
-(7, 7, 35, 8, '2026-04-20', 1),
-(8, 8, 40, 11, '2026-05-04', 3),
-(9, 9, 45, 2, '2026-05-05', 5),
-(10, 10, 50, 6, '2026-05-05', 2),
-(11, 11, 1, 15, '2026-05-06', 4),
-(12, 12, 2, 4, '2026-05-06', 0),
-(13, 13, 3, 18, '2026-05-07', 3),
-(14, 14, 4, 20, '2026-05-07', 2),
-(15, 15, 5, 1, '2026-05-08', 6),
-(16, 16, 6, 13, '2026-05-08', 1),
-(17, 17, 7, 16, '2026-05-09', 2),
-(18, 18, 8, 10, '2026-05-09', 3),
-(19, 19, 9, 19, '2026-05-10', 1),
-(20, 20, 10, 1, '2026-05-10', 0),
-(21, 21, 11, 17, '2026-05-11', 1),
-(22, 22, 12, 22, '2026-04-20', 4),
-(23, 23, 13, 25, '2026-05-12', 2),
-(24, 24, 14, 24, '2026-05-12', 1),
-(25, 25, 15, 27, '2026-05-13', 3),
-(26, 26, 16, 29, '2026-05-13', 5),
-(27, 27, 17, 30, '2026-05-14', 2),
-(28, 28, 18, 31, '2026-05-14', 1),
-(29, 29, 19, 32, '2026-05-15', 2),
-(30, 30, 20, 33, '2026-05-15', 4),
-(31, 31, 21, 34, '2026-05-16', 3),
-(32, 32, 22, 35, '2026-05-16', 1),
-(33, 33, 23, 36, '2026-05-17', 2),
-(34, 34, 24, 37, '2026-05-17', 1),
-(35, 35, 25, 38, '2026-05-18', 2),
-(36, 36, 26, 39, '2026-05-18', 3),
-(37, 37, 27, 40, '2026-05-19', 1),
-(38, 38, 28, 41, '2026-05-19', 2),
-(39, 39, 29, 42, '2026-05-20', 4),
-(40, 40, 30, 43, '2026-05-20', 1),
-(41, 41, 31, 44, '2026-05-21', 2),
-(42, 42, 32, 45, '2026-05-21', 1),
-(43, 43, 33, 46, '2026-05-22', 3),
-(44, 44, 34, 47, '2026-05-22', 2),
-(45, 45, 35, 48, '2026-05-23', 1),
-(46, 46, 36, 49, '2026-05-23', 6),
-(47, 47, 37, 50, '2026-05-24', 3),
-(48, 48, 38, 5, '2026-05-24', 0),
-(49, 49, 39, 8, '2026-05-25', 2),
-(50, 50, 40, 11, '2026-05-25', 4);
+(1, 5, 12, 1, '2026-05-01', 2),
+(2, 18, 3, 2, '2026-05-01', 1),
+(3, 5, 20, 3, '2026-05-02', 4),
+(4, 31, 7, 4, '2026-05-02', 2),
+(5, 12, 15, 1, '2026-05-03', 1),
+(6, 8, 22, 2, '2026-05-03', 3),
+(7, 25, 9, 3, '2026-05-04', 2),
+(8, 14, 30, 4, '2026-05-04', 1),
+(9, 41, 11, 1, '2026-05-05', 5),
+(10, 6, 18, 2, '2026-05-05', 2),
+(11, 33, 25, 3, '2026-05-06', 1),
+(12, 9, 14, 4, '2026-05-06', 3),
+(13, 27, 4, 1, '2026-05-07', 2),
+(14, 19, 31, 2, '2026-05-07', 1),
+(15, 2, 8, 3, '2026-05-08', 4),
+(16, 44, 21, 4, '2026-05-08', 2),
+(17, 15, 10, 1, '2026-05-09', 3),
+(18, 38, 17, 2, '2026-05-09', 1),
+(19, 22, 24, 3, '2026-05-10', 2),
+(20, 7, 13, 4, '2026-05-10', 1),
+(21, 48, 2, 1, '2026-05-11', 4),
+(22, 11, 19, 2, '2026-05-11', 2),
+(23, 29, 6, 3, '2026-05-12', 1),
+(24, 17, 28, 4, '2026-05-12', 3),
+(25, 36, 5, 1, '2026-05-13', 2),
+(26, 4, 16, 2, '2026-05-13', 1),
+(27, 21, 35, 3, '2026-05-14', 5),
+(28, 13, 1, 4, '2026-05-14', 2),
+(29, 52, 23, 1, '2026-05-15', 1),
+(30, 10, 27, 2, '2026-05-15', 3),
+(31, 30, 12, 3, '2026-05-16', 2),
+(32, 24, 20, 4, '2026-05-16', 1),
+(33, 3, 9, 1, '2026-05-17', 4),
+(34, 42, 14, 2, '2026-05-17', 2),
+(35, 16, 32, 3, '2026-05-18', 1),
+(36, 20, 18, 4, '2026-05-18', 3),
+(37, 35, 7, 1, '2026-05-19', 2),
+(38, 45, 22, 2, '2026-05-19', 1),
+(39, 28, 3, 3, '2026-05-20', 4),
+(40, 8, 25, 4, '2026-05-20', 2),
+(41, 54, 11, 1, '2026-05-21', 1),
+(42, 23, 15, 2, '2026-05-21', 3),
+(43, 12, 5, 3, '2026-05-22', 2),
+(44, 47, 30, 4, '2026-05-22', 1),
+(45, 26, 17, 1, '2026-05-23', 5),
+(46, 18, 8, 2, '2026-05-23', 2),
+(47, 6, 21, 3, '2026-05-24', 1),
+(48, 37, 10, 4, '2026-05-24', 3),
+(49, 55, 13, 1, '2026-05-25', 2),
+(50, 32, 24, 2, '2026-05-25', 1),
+(51, 14, 2, 3, '2026-05-26', 4),
+(52, 40, 34, 4, '2026-05-26', 2),
+(53, 11, 19, 1, '2026-05-27', 1),
+(54, 59, 6, 2, '2026-05-27', 3),
+(55, 22, 29, 3, '2026-05-28', 2),
+(56, 7, 16, 4, '2026-05-28', 1),
+(57, 49, 4, 1, '2026-05-29', 5),
+(58, 15, 26, 2, '2026-05-29', 2),
+(59, 34, 1, 3, '2026-05-30', 1),
+(60, 9, 35, 4, '2026-05-30', 3),
+(61, 53, 12, 1, '2026-06-01', 2),
+(62, 20, 23, 2, '2026-06-01', 1),
+(63, 43, 7, 3, '2026-06-02', 4),
+(64, 17, 18, 4, '2026-06-02', 2),
+(65, 60, 27, 1, '2026-06-03', 1),
+(66, 5, 31, 2, '2026-06-03', 3),
+(67, 25, 14, 3, '2026-06-04', 2),
+(68, 38, 9, 4, '2026-06-04', 1),
+(69, 12, 20, 1, '2026-06-05', 4),
+(70, 57, 11, 2, '2026-06-05', 2),
+(71, 30, 5, 3, '2026-06-06', 1),
+(72, 21, 22, 4, '2026-06-06', 3),
+(73, 46, 3, 1, '2026-06-07', 2),
+(74, 16, 28, 2, '2026-06-07', 1),
+(76, 6, 100, 3, '2026-06-13', 3),
+(77, 19, 100, 1, '2026-06-13', 6);
 
 --
 -- Índices para tablas volcadas
@@ -410,7 +397,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id_cliente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_cliente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT de la tabla `empleados`
@@ -422,19 +409,19 @@ ALTER TABLE `empleados`
 -- AUTO_INCREMENT de la tabla `inventario`
 --
 ALTER TABLE `inventario`
-  MODIFY `id_inventario` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_inventario` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_producto` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id_venta` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_venta` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- Restricciones para tablas volcadas

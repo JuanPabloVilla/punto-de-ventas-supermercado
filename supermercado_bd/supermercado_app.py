@@ -10,7 +10,7 @@ from inventario import inventario_mercado
 def main():
     ventana = tk.Tk()
     ventana.title("gestion de ventas supermercado")
-    ventana.geometry("800x500")
+    ventana.geometry("850x500")
     
     bd = Conexion()
     
@@ -22,9 +22,14 @@ def main():
     tabs.pack(fill=tk.BOTH, expand=True, padx=12, pady=12)
     
     pes_registro = registro_ventas(tabs, bd)
+    pes_hisorial = historial_ventas(tabs, bd)
+    pes_inventario = inventario_mercado(tabs, bd)
+
     
     tabs.add(pes_registro, text="Registrar Venta")
-    
+    tabs.add(pes_hisorial, text="Historial ventas")
+    tabs.add(pes_inventario, text="Inventario")
+
     ventana.mainloop()
     
 '''    
@@ -33,7 +38,5 @@ def main():
     pes_inventario = inventario_mercado(tabs, bd)
     tabs.add(pes_historial, text="Historial de ventas")
     tabs.add(pes_inventario, text="Editar inventario")
-    '''
-
-    
+    '''    
 main()
